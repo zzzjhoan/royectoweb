@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD CONTACTOS</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            CRUD CONTACTOS
+          </a>
+          <div class="d-flex" role="search">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  JHOAN,MICH
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right p-1"></i>CERRAR SESION</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card text-center m-4">
+        <div class="card-header">
+            CRUD CONTACTOS
+        </div>
+        <div class="card-body">
+            <div class="text-end">
+                <button class="btn btn-danger mb-2"><i class="bi bi-plus-circle-dotted p-1"></i>Agregar Contacto</button>
+            </div>
+            <table class="table table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <td>Nombre</td>
+                    <td>Apellido Paterno</td>
+                    <td>Apellido Materno</td>
+                    <td>Telefono </td>
+                    <td>Correo</td>
+                    <td>Editar</td>
+                    <td>Eliminar</td>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MICHEL</td>
+                        <td>TORRES</td>
+                        <td>VALDES</td>
+                        <td>5572818014 </td>
+                        <td>laelreyes4@gmail.com</td>
+                        <td><button class="btn btn-success"><i class="bi bi-pencil-square p-1"></i>Editar</button></td>
+                        <td><button class="btn btn-danger"><i class="bi bi-trash p-1"></i>Eliminar</button></td>
+                      </tr>
+                      <tr>
+                        <td>JHOAN</td>
+                        <td>REYES</td>
+                        <td>MENA</td>
+                        <td>5572818014 </td>
+                        <td>laelreyes4@gmail.com</td>
+                        <td><button class="btn btn-success"><i class="bi bi-pencil-square p-1"></i>Editar</button></td>
+                        <td><button class="btn btn-danger"><i class="bi bi-trash p-1"></i>Eliminar</button></td>
+                      </tr>
+                </tbody>
+              </table>
+
+        </div>
+        <div class="card-footer text-body-secondary">
+         Design by JHOAN and MICH 2022
+        </div>
+      </div>
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+</body>
+</html>
