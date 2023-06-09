@@ -17,29 +17,21 @@ if($_POST){
         if($cx->query($sqlInsertar)===true){
             $valido['successe']=true;
             $valido['mensaje']="SE GUARDO CORRECTAMENTE";
-            
-         
         }else{
             $valido['successe']=false;
             $valido['mensaje']="ERROR: NO SE GUARDO";
 
         }
-
     }else{
         $valido['successe']=false;
         $valido['mensaje']="EL CORREO ELECTRONICO YA ESTA EN USO";
     }
-
-    
-
-
-
-
 }else{
     $valido['successe']=false;
     $valido['mensaje']="NO SE GUARDO";
 }
 echo json_encode($valido);
+
 
 
 

@@ -5,8 +5,8 @@ const validarCorreo=(correo)=>{
 }
 
 const validarPassword=(password)=>{
-    return /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\s{8,16}$/.test(password.trim());
+    return /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(password.trim());
 }
 const validarNombre=(nombre)=>{
-    return /^[a-z0-9ü][a-z0-9ü_]{3,9}$/.test(nombre.trim());
+    return /^([a-z ñáéíóû]{2,60})$/i.test(nombre.trim());
 }
